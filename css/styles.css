@@ -1,9 +1,9 @@
 footer {
-    background-color: rgb(93, 20, 93);
+    background-color: rgb(199, 43, 199);
 }
 
 header{
-    background-color: rgb(93, 20, 93);
+    background-color: rgb(199, 43, 199);
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
