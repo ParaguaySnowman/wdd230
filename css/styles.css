@@ -5,7 +5,7 @@ footer {
 header{
     background-color: rgb(93, 20, 93);
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
 
 .image-box{
