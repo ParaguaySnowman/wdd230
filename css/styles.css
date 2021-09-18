@@ -12,6 +12,11 @@ header{
     grid-column: 2/3;
 }
 
+img{
+    width: 60px;
+    height: 100px;
+}
+
 main {
     background-color: rgb(46, 39, 1);
 }
