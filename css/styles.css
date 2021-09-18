@@ -1,5 +1,15 @@
-header, footer{
+footer {
     background-color: rgb(53, 2, 53);
+}
+
+header{
+    background-color: rgb(53, 2, 53);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.image-box{
+    grid-column: 2/3;
 }
 
 main {
