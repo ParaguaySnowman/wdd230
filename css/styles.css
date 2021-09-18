@@ -1,11 +1,13 @@
 footer {
     background-color: rgb(199, 43, 199);
+    color: white;
 }
 
 header{
     background-color: rgb(199, 43, 199);
     display: grid;
     grid-template-columns: 3fr 2fr;
+    color: white;
 }
 
 .image-box{
@@ -13,8 +15,8 @@ header{
 }
 
 img{
-    width: 300px;
-    height: 400px;
+    width: 450px;
+    height: 600px;
 }
 
 main {
