@@ -1,7 +1,9 @@
-<script>
-function get_Year(){    
-     var t=new Date();
-     var year=t.getFullYear();
-     document.querySelector("p").innerHTML=year;
-}
-</script>
+//show to the user the current year
+let d = new Date();
+let currentYear = d.getFullYear();
+document.querySelector(".current_year").innerHTML = currentYear;
+
+
+//show to the user the last modified date
+let lastModified = new Date();
+document.getElementById("last_updated").innerHTML = lastModified.toUTCString();

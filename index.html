@@ -7,15 +7,7 @@
     <meta name="description" content="Assignment portal for Parker Mortensen in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <link rel="stylesheet" href="./css/styles.css" type="text/css">
     <title>WDD 230 Assignment Portal - Parker Mortensen</title>
-    <script>
-        function get_Year(){    
-             var t=new Date();
-             var year=t.getFullYear();
-             document.querySelector(".current_year").innerHTML=year;
-        }
-        get_Year();
-    </script>
-    <!--<script type = "text/javascript" src="current_year.js"></script>-->
+    <script type = "text/javascript" src="./js/current_year.js"></script>
 </head>
 
 <body>
@@ -34,8 +26,11 @@
     </main>
 
     <footer>
-        <p>&copy;</p> <p class="current_year"></p><p>- Parker Mortensen - WDD 230 - Section 11</p>
+        <div id=footer-block> &copy; <span class="current_year"></span> | Parker Mortnesen - Mesa, Arizona | <a href="https://www.byui.edu/online" target="_blank" >BYU-Idaho Online Learning</a> </div>
+       
+        <span id="last_updated">Last Updated</span>
     </footer>
+    <script src="js/currentdate.js"></script>
 
 </body>
 </html>
