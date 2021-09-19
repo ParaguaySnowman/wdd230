@@ -5,5 +5,5 @@ document.querySelector(".current_year").innerHTML = currentYear;
 
 
 //show to the user the last modified date
-let lastModified = new Date();
-document.getElementById("last_updated").innerHTML = lastModified.toUTCString();
+//let lastModified = new Date();
+//document.getElementById("last_updated").innerHTML = lastModified.toUTCString();
