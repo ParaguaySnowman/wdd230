@@ -31,6 +31,6 @@ img{
 
 main {
     background-color: rgb(206, 183, 52);
-    margin: 0;
-    padding: 0;
+    margin: -5;
+    padding: -5;
 }
