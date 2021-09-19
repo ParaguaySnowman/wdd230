@@ -1,6 +1,8 @@
 footer {
     background-color: rgb(199, 43, 199);
     color: rgb(228, 228, 228);
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -8,6 +10,8 @@ header{
     display: grid;
     grid-template-columns: 3fr 2fr;
     color: rgb(228, 228, 228);
+    margin: 0;
+    padding: 0;
 }
 
 .image-box{
@@ -21,4 +25,6 @@ img{
 
 main {
     background-color: rgb(206, 183, 52);
+    margin: 0;
+    padding: 0;
 }
