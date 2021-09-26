@@ -1,5 +1,6 @@
 body {
     background-color: rgb(133, 29, 133);
+    font-family: 'Merriweather', serif;
 }
 
 footer {
@@ -13,7 +14,6 @@ header {
 img{
     width: 450px;
     height: 600px;
-    float: right;
 }
 
 main {

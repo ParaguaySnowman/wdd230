@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+@media all and (min-width: 37.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (min-width: 60em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
