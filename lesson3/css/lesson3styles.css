@@ -4,6 +4,11 @@ nav ul {
     text-align:center;
 }
 
+nav ul li {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 @media (max-width: 230px) {
     nav ul li {
         flex: 100%
