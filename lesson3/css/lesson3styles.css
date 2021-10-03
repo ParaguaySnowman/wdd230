@@ -1,4 +1,11 @@
-nav ul li{
+nav ul {
     display:flex;
-    flex:1 1 100%;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+@media (max-width: 230px) {
+    nav ul li {
+        flex: 100%
+    }
 }
