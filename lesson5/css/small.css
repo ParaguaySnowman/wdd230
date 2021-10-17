@@ -27,7 +27,7 @@ nav li a {
   color: #FFFFFF;
   display: block;
   text-align: center;
-  padding 0.75rem;
+  padding: 0.75rem;
   text-decoration: none;
 }
 
@@ -74,7 +74,6 @@ footer, footer a {
 }
 
 ul li { flex: 1 1 100%;}
-}
 
   
   
