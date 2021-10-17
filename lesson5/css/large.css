@@ -1,0 +1,15 @@
+/*tablet/laptop view*/
+@media only screen and (min-width: 32.5em) {
+
+    .navigation{ 
+      display: flex;
+      padding: 0;
+    }
+    
+    .navigation li:first-child {
+      display:none;
+    }
+    
+    .navigation li {
+      display: block;
+    }
