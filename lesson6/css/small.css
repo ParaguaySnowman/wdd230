@@ -62,6 +62,7 @@ nav ul {
 
 .navigation .active {
   background-color:#ffff00;
+  color: #000;
 }
 
 main h1{
