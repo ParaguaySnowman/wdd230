@@ -36,10 +36,6 @@ nav a:hover {
   color: #000000;
 }
 
-nav a:active {
-  background-color:#ffff00;
-}
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -62,6 +58,10 @@ nav ul {
 
 .responsive li {
   display: block;
+}
+
+nav a:active {
+  background-color:#ffff00;
 }
 
 main h1{
