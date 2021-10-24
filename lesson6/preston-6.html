@@ -81,8 +81,8 @@
   </main>
 
   <footer>
-          <p> &copy; <span id="current-year"></span> | Parker Mortensen | Mesa, Arizona | <a href="https://www.byui.edu/online" target="_blank" >BYU-Idaho Online Learning</a> </p>
-          <p> <span id="current-date"></span></p>
+    <p> &copy; <span id="current-year"></span> | Parker Mortensen | Mesa, Arizona | <a href="https://www.byui.edu/online" target="_blank" >BYU-Idaho Online Learning</a> </p>
+    <p> <span id="current-date"></span></p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script> 
@@ -91,6 +91,12 @@
       families: ["Merriweather","Arial"]
     }
   });
+  </script>
+  <script>
+    $("a").click(function(){
+      $("a").css("background-color","");
+      $(this).css("background-color","#ffff00");
+      });
   </script>
   <script src="./js/script.js"></script>
 </body>
