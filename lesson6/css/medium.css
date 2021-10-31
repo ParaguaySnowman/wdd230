@@ -1,5 +1,5 @@
   /*tablet/laptop view*/
-  @media only screen and (min-width: 32.5em) {
+  @media only screen and (min-width: 425px) {
   
     .navigation{ 
       display: flex;
