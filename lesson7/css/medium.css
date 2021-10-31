@@ -1,18 +1,6 @@
   /*tablet/laptop view*/
-  @media only screen and (min-width: 32.5em) {
-  
-    .navigation{ 
-      display: flex;
-      padding: 0;
+  @media only screen and (min-width: 425px) {
+    .galleryGrid {
+      grid-template-columns: 1fr 1fr;
     }
-    
-    .navigation li:first-child {
-      display:none;
-    }
-    
-    .navigation li {
-      display: block;
-    }
-  
-    nav ul li { flex: 1 1 100%;}
-  }
+}
