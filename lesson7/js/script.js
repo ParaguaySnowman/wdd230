@@ -1,56 +1,28 @@
-let imagesToLoad = document.querySelectorAll('img[data-src]');
-const loadImages = (image) => {
-  image.setAttribute('src', image.getAttribute('data-src'));
-  image.onload = () => {
-    image.removeAttribute('data-src');
-  };
-};
+var humidity = document.getElementById("humidity").innerHTML;
+var temp = document.getElementById("temp").innerHTML;
+var windspeed = document.getElementById("windspeed").innerHTML;
+var windchill = Math.round(
+    35.74 + 
+    (0.6215*temp) - 
+    (35.75 * 
+     (Math.pow(windspeed,0.16))) + 
+     (0.4275 * 
+      temp * 
+      (Math.pow(windspeed,0.16))));
 
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-});
+document.getElementById("windchill").innerHTML = windchill;
 
-if('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
-        }
-      });
-    });
-    imagesToLoad.forEach((img) => {
-      observer.observe(img);
-    });
-  } else {
-    imagesToLoad.forEach((img) => {
-      loadImages(img);
-    });
-  }
-
-
-//To display days passed since last vist
-const lastDate = new Date(localStorage.getItem("lastDate")); //getting the last date
-localStorage.setItem("lastDate", currentDate); // creating the last date with the current date.
-
-const daySpace = document.getElementById("days-passed");
-function calcDays (current, last) {
-  const lastDate = new Date(last);
-  const currentDate = new Date(current);
-
-  const timePassed = lastDate.getTime() - currentDate.getTime();
-  const daysPassed = timePassed / (1000 * 3600 * 24);
-
-  return Math.round(daysPassed);
+function toggleMenu() {
+  document
+    .getElementsByClassName("navigation")[0]
+.classList.toggle("responsive");
 }
 
-const numDays = calcDays(currentDate, lastDate); 
-if (numDays < 1) {
-    daySpace.innerHTML = "Today";
-}
-else if (numDays == 1) {
-    daySpace.innerHTML = numDays + " day ago"
-}
-else {
-    daySpace.innerHTML = numDays + " days ago"
-}
+//show current year
+document.querySelector("#current-year").textContent = new Date().getFullYear();
+
+//show date current date
+var date = new Date();
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+document.getElementById("current-date").textContent = date.toLocaleDateString('en-UK',options);

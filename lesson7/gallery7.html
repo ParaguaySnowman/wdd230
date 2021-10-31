@@ -5,18 +5,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Parker Mortensen">
-    <meta name="description" content="Lesson 4: page stub for Preston Community for Weather Site Project">
+    <meta name="description" content="Lesson 7: Gallery Page for Weather Site Project">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/gallerySmall.css" type="text/css">
+    <link rel="stylesheet" href="./css/galleryMedium.css" type="text/css">
+    <link rel="stylesheet" href="./css/galleryLarge.css" type="text/css">
     <link rel="stylesheet" href="./css/small.css" type="text/css">
-    <link rel="stylesheet" href="./css/medium.css" type="text/css">
-    <link rel="stylesheet" href="./css/large.css" type="text/css">
     <title>Preston Community Page Stub - Lesson 4</title>
 </head>
 
 <body>
+  <header>
+    <img id="logo" alt="logo" src="https://i.pinimg.com/originals/85/77/76/857776a230c3a7cfbf6d7eb3fa92eeb9.jpg">
+    <section class="headings">
+      <span>Idaho High Country Weather</span>
+      <div class="catchphrase">"Keeping you safe and informed"</div>
+    </section>
+  </header>
+
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/lesson6/preston-7.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="https://paraguaysnowman.github.io/wdd230/lesson6/gallery7.html">Gallery</a></li>
+    </ul>
+  </nav>
+
   <div class="gallery">
     <h1>Weather Gallery</h1>
     <div class="galleryGrid">
@@ -47,6 +68,5 @@
     </div>
     <p>Last visit: <span id="days-passed"></span></p>
   </div>
-  <script src="./js/lazyload.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/galleryScript.js"></script>
 </body>
