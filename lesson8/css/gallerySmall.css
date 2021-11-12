@@ -1,0 +1,27 @@
+body {
+  background-color:#000;
+}
+
+.gallery {
+  background-color: #fff;
+}
+
+.galleryGrid {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+picture img {
+  width: 400px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+  
+  

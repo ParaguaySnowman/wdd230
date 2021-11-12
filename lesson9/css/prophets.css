@@ -1,0 +1,43 @@
+.cards {
+    display: flex;
+    flex-flow: wrap;
+  }
+  
+  .cards section {
+    background-color: rgba(72, 72, 153, 0.453);
+    display: flex;
+    flex-flow: column;
+    margin: 15px;
+    width: 95%;
+  }
+  
+  section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 50%;
+    height: 60%;
+  }
+  
+  section h2 {
+    color: blue;
+  }
+  
+  section h2, section p {
+    text-align: center;
+  }
+  
+  /*tablet/laptop view*/
+  @media only screen and (min-width: 425px) and (max-width: 1023px) {
+    .cards section{
+      width: 45%;
+    }
+  }
+  
+  /*desktop view*/
+  @media only screen and (min-width: 1024px) {
+    .cards section{
+      width: 20%;
+    }
+  }  
