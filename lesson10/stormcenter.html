@@ -41,13 +41,13 @@
     
     <form>
         <label for="fullName">Full Name:
-          <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]" required>
+          <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]{5,}" required>
         </label><br>
         <label for="email">email:
           <input type="email" id="email" name="email" placeholder="username@server.com">
         </label><br>
         <label for="phoneNumber">phone number
-          <input type="tel" id="phoneNumber" name="phoneNumber">
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
         </label><br>
         <label for="zipCode">zip code:
           <input type="number" id="zipCode" name="zipCode" required>
@@ -55,18 +55,22 @@
         <label for="stormDate">storm date:
           <input type="date" id="date" name="date">
         </label><br>
-        <label for="stormType">storm type:
-          <input type="datalist" id="stormType" name="stormType">
-        </label><br>
+        <label for="stormType">Storm Type<input type="text" list="storms" name="stormType"><datalist id="storms">
+          <option value="Flash Flood">Flash Flood</option>
+          <option value="Hail">Hail</option>
+          <option value="Hurricane">Hurricane</option>
+          <option value="Thunderstorm">Thunderstorm</option>
+          <option value="Tornado">Tornado</option>
+       </datalist></label><br>
         <label for="stormSeverity">storm severity:
           <input type="range" min="1" max="10" id="stormSeverity" name="stormSeverity">
         </label><br>
-        <label for="stormRegion">storm region:
-          <input type="select" id="stormRegion" name="stormRegion">
-        </label><br>
-        <label for="userInDangerLevel">user in-danger level:
-          <input type="radio" id="userInDangerLevel" name="userInDangerLevel">
-        </label><br>
+        <label for="stormRegion">Storm Region<input type="text" list="cities" name="stormRegion"><datalist id="cities">
+          <option value="" disabled selected></option>Select a Region ...</option>
+          <option value="Fish Haven">Fish Haven</option>
+          <option value="Preston">Preston</option>
+          <option value="Soda Springs">Soda Springs</option>
+       </datalist></label><br>
         <label for="comments">comments:
           <input type="textarea" id="comments" name="comments">
         </label><br>
@@ -85,8 +89,6 @@
     google: {
       families: ["Merriweather","Arial"]
     }
-  });
-  </script>
-  <script src="./js/script.js"></script>
+  });</script>
 </body>
 </html>
