@@ -54,8 +54,8 @@
     display: block;
   }
   
-  /**************************tablet/laptopview**********************************/
-  @media only screen and (max-width: 1023px) and (min-width: 425px) {
+  /**************************tablet/laptop/desktop view**********************************/
+  @media only screen and (min-width: 426px) {
     /*Navigation*/
     .navigation {
       display: flex;
@@ -74,13 +74,5 @@
       flex: 1 1 100%;
     }
   }
-  
-  /*******************desktop view************************/
-  @media only screen and (min-width: 1024px) {
-    /**********************homepage-specific********************/
-    .townSummary {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
+
   
