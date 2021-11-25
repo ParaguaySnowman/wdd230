@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Parker Mortensen" />
+    <meta
+      name="description"
+      content="Lesson 4: page stub for Preston Community for Weather Site Project"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <title>Idaho High Country Weather - Home</title>
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Parker Mortensen">
-    <meta name="description" content="Lesson 4: page stub for Preston Community for Weather Site Project">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/small.css" type="text/css">
-    <link rel="stylesheet" href="./css/medium.css" type="text/css">
-    <link rel="stylesheet" href="./css/large.css" type="text/css">
-    <title>Preston Community Page Stub - Lesson 4</title>
-</head>
-
-<body>
-  <header>
-    <img id="logo" alt="logo" src="https://i.pinimg.com/originals/85/77/76/857776a230c3a7cfbf6d7eb3fa92eeb9.jpg">
-    <section class="headings">
-      <span>Idaho High Country Weather</span>
-      <div class="catchphrase">"Keeping you safe and informed"</div>
-    </section>
-  </header>
-
-  <nav>
-    <ul class="navigation">
-      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-      <li><a href="https://paraguaysnowman.github.io/wdd230/lesson9/index.html">Home</a></li>
-      <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/lesson10/preston-10.html">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="https://paraguaysnowman.github.io/wdd230/lesson10/stormcenter.html">Storm Center</a></li>
-      <li><a href="https://paraguaysnowman.github.io/wdd230/lesson10/gallery.html">Gallery</a></li>
-    </ul>
-  </nav>
-
-  <main>
+  <body>
+    <header>
+      <img
+        class="logo"
+        alt="logo"
+        src="https://i.pinimg.com/originals/85/77/76/857776a230c3a7cfbf6d7eb3fa92eeb9.jpg"
+      />
+      <section class="headings">
+        <span>Idaho High Country Weather</span>
+        <div class="catchphrase">"Keeping you safe and informed"</div>
+      </section>
+    </header>
     
-    <h1>Preston, Idaho</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson10/index.html"
+            >Home</a
+          >
+        </li>
+        <li class="active">
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson10/preston-10.html"
+            >Preston</a
+          >
+        </li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li>
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/lesson10/stormcenter.html"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson10/gallery.html"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
+      <img class="hero" src="./images/hero.jpg" alt="hero image" />
 
-    <div class="container">
-      <picture id="hero-image">
-        <img src="./images/hero.jpg" alt="Beautiful Day">
-      </picture> 
       <div class="summary">
         <p>Weather Summary<p>
           <p>Currently: Clear<p>
@@ -120,6 +139,6 @@
     }
   });
   </script>
-  <script src="./js/script.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 </html>
