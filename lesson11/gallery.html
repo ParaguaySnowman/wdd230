@@ -38,7 +38,7 @@
     <nav>
       <ul class="navigation">
         <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li class="active">
+        <li>
           <a href="https://paraguaysnowman.github.io/wdd230/lesson11/index.html"
             >Home</a
           >
@@ -56,7 +56,7 @@
             >Storm Center</a
           >
         </li>
-        <li>
+        <li class="active">
           <a href="https://paraguaysnowman.github.io/wdd230/lesson11/gallery.html"
             >Gallery</a
           >
@@ -80,19 +80,34 @@
           <figcaption>Thunderstorm leaves severe damage in Soda Springs.</figcaption>
       </picture> 
       <picture>
-          <img src="./images/placehold.png", data-src='./images/prestonFoggyWeather.jpg'>
+          <img src="./images/placehold.png", data-src='./images/preston.jpg'>
           <figcaption>Trails closed east of Preston during foggy Weather</figcaption>
       </picture> 
       <picture>
-          <img src="placehold.png", data-src='./images/fishHavenGreatWeather.jpg'>
+          <img src="placehold.png", data-src='./images/fishhaven.jpg'>
           <figcaption>Fantastic Weather for fishing predicted for this autumn in Fish Haven</figcaption>
       </picture> 
       <picture>
-          <img src="./images/placehold.png", data-src='./images/sodaSpringLightningStorm.jpg'>
+          <img src="./images/placehold.png", data-src='./images/sodaSprings.jpg'>
           <figcaption>Lightning Storm dazzles Soda Springs</figcaption>
       </picture>
     </div>
     <p>Last visit: <span id="days-passed"></span></p>
   </div>
+
+  <footer>
+    <p> &copy; <span id="current-year"></span> | Parker Mortensen | Mesa, Arizona | <a href="https://www.byui.edu/online" target="_blank" >BYU-Idaho Online Learning</a> </p>
+    <p> <span id="current-date"></span></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script> 
+  WebFont.load({
+    google: {
+      families: ["Merriweather","Arial"]
+    }
+  });
+  </script>
+  <script src="./js/common.js"></script>
   <script src="./js/galleryScript.js"></script>
 </body>
+</html>
