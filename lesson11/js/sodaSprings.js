@@ -71,9 +71,9 @@ fetch(apiURL)
   
       for (let i = 0; i < towns.length; i++) {
         if (towns[i].name == "Soda Springs") {
-            for (let i = 0; i < towns[i].events.length; i++) {
+            for (let j = 0; j < towns[i].events.length; j++) {
                 let event = document.createElement("p");
-                event.textContent = towns[i].events[i];
+                event.textContent = towns[i].events[j];
                 townEvents.appendChild(event);
             }
         }
