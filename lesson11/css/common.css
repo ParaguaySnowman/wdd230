@@ -86,6 +86,11 @@
     margin-right: auto;
   }
 
+  #townEvents, #foundersArticle {
+    background-color: #000;
+    color: #fff;
+  }
+
   
   /**************************tablet/laptop/desktop view**********************************/
   @media only screen and (min-width: 426px) {

@@ -57,3 +57,25 @@ fetch(apiURL)
         i++;
     });
   });
+
+  const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+  fetch(requestURL)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(jsonObject) {
+      console.table(jsonObject); // temporary checking for valid response and data parsing
+  
+      const towns = jsonObject["towns"];
+  
+      for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == "Soda Springs") {
+            for (let i = 0; i < towns[i].events.length; i++) {
+                let event = document.createElement("p");
+                event.textContent = towns[i].events[i];
+                townEvents.appendChild(event);
+            }
+        }
+      }
+    });
