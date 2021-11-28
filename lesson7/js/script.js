@@ -21,7 +21,7 @@ function toggleMenu() {
 //show current year
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
-//show date current date
+//show current date
 var date = new Date();
 var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 

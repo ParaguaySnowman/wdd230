@@ -1,0 +1,111 @@
+/************************Small and Default View***********************/
+
+/******************Announcemnents**********************/
+  .announcement {
+    display: none;
+  }
+  
+  .is-friday {
+    display: block;
+  }
+  
+  .announcement p {
+    background-color: #e5f601;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+/**************************Header**************************/
+.logo {
+    height: 80px;
+    margin-right: 5px;
+  }
+  
+  header {
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+  
+  /****************Navigation*********************/
+  nav {
+    background-color: #000;
+  }
+  
+  nav li a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0.25rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #bbb;
+    color: #000;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation .active {
+    background-color: #140058;
+    color: #000;
+  }
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+
+  /****************main area****************/
+  .hero-section {
+    display: block;
+    background-color: #000;
+    width: 100%;
+  }
+
+  .hero {
+    background-color: #000;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  /**************************tablet/laptop/desktop view**********************************/
+  @media only screen and (min-width: 426px) {
+    /*Navigation*/
+    .navigation {
+      display: flex;
+      padding: 0;
+    }
+  
+    .navigation li:first-child {
+      display: none;
+    }
+  
+    .navigation li {
+      display: block;
+    }
+  
+    nav ul li {
+      flex: 1 1 100%;
+    }
+  }
+
+  

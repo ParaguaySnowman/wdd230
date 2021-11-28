@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Parker Mortensen" />
+    <meta name="description" content="Lesson 4: page stub for Preston Community for Weather Site Project"/>
+    <meta name="preston" id="townName" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <link rel="stylesheet" href="./css/weather.css" type="text/css" />
+    <title>Idaho High Country Weather - Preston</title>
+  </head>
+
+  <body>
+    <section class="announcement">
+      <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+    <header>
+      <img
+        class="logo"
+        alt="logo"
+        src="https://i.pinimg.com/originals/85/77/76/857776a230c3a7cfbf6d7eb3fa92eeb9.jpg"/>
+      <section class="headings">
+        <span>Idaho High Country Weather</span>
+        <div class="catchphrase">"Keeping you safe and informed"</div>
+      </section>
+    </header>
+    
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson11/index.html">Home</a>
+        </li>
+        <li class="active">
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson11/preston.html">Preston</a>
+        </li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson11/sodaSprings.html">Soda Springs</a></li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson11/fishHaven.html">Fish Haven</a></li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson10/stormcenter.html">Storm Center</a>
+        </li>
+        <li>
+          <a href="https://paraguaysnowman.github.io/wdd230/lesson10/gallery.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
+      <div class="hero-section">
+        <picture>
+          <source srcset="./images/hero426.jpg" media="(min-width:426px) and (max-width:1024px)">
+          <source srcset="./images/hero1027.jpg" media="(min-width:1027px)">
+          <img class="hero" src="./images/hero320.jpg" alt="hero image">
+        </picture>
+      
+
+        <div class="summary">
+          <p>Weather Summary<p>
+            <p>Currently: <span id="condition">Clear</span><p>
+            <img id="weather-icon" src="" alt="">
+            <p>Daily High Temperature: <span id="temp"> 54</span>&#8457;</p><br>
+            <p>Wind Chill: <span id="windchill">0</span></p><br>
+            <p>Humidity: <span id="humidity">95</span>%</p><br>
+            <p>Windspeed: <span id="windspeed">12</span> mph</p>
+          <br>
+        </div>
+      </div>
+
+    <section class="five-day">
+			<h2>5 Day Forecast</h2>
+
+			<div class="forecast-info">
+				<div class="forecast-day">
+					<p id="day0">Wed</p>
+					<p id="day1">Thu</p>
+					<p id="day2">Fri</p>
+					<p id="day3">Sat</p>
+					<p id="day4">Sun</p>
+				</div>
+
+				<div class="forecast-image">
+					<img id="img0" src="./images/icon.png" alt="weather icon">
+					<img id="img1" src="./images/icon.png" alt="weather icon">
+					<img id="img2" src="./images/icon.png" alt="weather icon">
+					<img id="img3" src="./images/icon.png" alt="weather icon">
+					<img id="img4" src="./images/icon.png" alt="weather icon">
+				</div>
+
+				<div class="forecast-temperature">
+					<p id="forTemp0">89 °F</p>
+					<p id="forTemp1">87 °F</p>
+					<p id="forTemp2">78 °F</p>
+					<p id="forTemp3">75 °F</p>
+					<p id="forTemp4">72 °F</p>
+				</div>
+			</div>
+		</section>
+
+    <div id="article">
+      <h2>Founders Day Fresco<h2>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    
+    <div id="contactInfo">
+      <strong>Idaho High Country Weather</strong>
+      <p> 30 N 1st E <br>
+          Preston, ID 83263 <br>
+        <br>
+          Phone: 999 999 9999
+          Email: ihcs@sws.com</p>
+    </div> 
+    
+  </main>
+
+  <footer>
+    <p> &copy; <span id="current-year"></span> | Parker Mortensen | Mesa, Arizona | <a href="https://www.byui.edu/online" target="_blank" >BYU-Idaho Online Learning</a> </p>
+    <p> <span id="current-date"></span></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script> 
+  WebFont.load({
+    google: {
+      families: ["Merriweather","Arial"]
+    }
+  });
+  </script>
+  <script src="./js/common.js"></script>
+  <script src="./js/preston.js"></script>
+</body>
+</html>
