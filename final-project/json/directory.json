@@ -34,17 +34,6 @@
             "website":"https://boeing.com/"
         },
         {
-            "businessName":"Buckhorn Baths Motel",
-            "contactInfo":[
-                {
-                    "phone":"n/a",
-                    "address":"166 N Recker Rd."
-                }  
-            ],
-            "logo":".images/buckhorn-baths-motel-logo.jpg",
-            "website":"https://buckhornbathsmotel.com"
-        },
-        {
             "businessName":"DriveTime",
             "contactInfo":[
                 {
