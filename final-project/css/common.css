@@ -1,0 +1,102 @@
+/********************header***********************/
+header {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+}
+
+.logo {
+  grid-column: 1;
+}
+
+.company-name {
+  grid-column: 2;
+}
+
+/*******************navigation*********************/
+nav {
+  background-color: #BD2035;
+  margin-bottom: 0;
+}
+
+  nav li a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0.25rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: rgb(60, 16, 16);
+    color: #fff;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation .active {
+    background-color: rgb(60, 16, 16);
+    color: #fff;
+  }
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+
+/*************************************Main*******************************************/
+main {
+  background-color: #E47D1E;
+}
+
+/********************footer***********************/
+.contact-info {
+    display: flex;
+    background-color: #0070B9;
+    color: #fff;
+}
+
+.contact-info p {
+    margin: 10px;
+}
+
+.social-media {
+    margin: 10px;
+}
+
+.icon {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+}
+
+
+  /**************************tablet/laptop/desktop view**********************************/
+  @media only screen and (min-width: 426px) {
+    /*Navigation*/
+    .navigation {
+      display: flex;
+      padding: 0;
+    }
+  
+    .navigation li:first-child {
+      display: none;
+    }
+  
+    .navigation li {
+      display: block;
+    }
+  
+    nav ul li {
+      flex: 1 1 100%;
+    }
+  }

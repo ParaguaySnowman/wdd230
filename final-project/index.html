@@ -17,31 +17,63 @@
 </head>
 
 <body>
-  <header>
-    <section class="weather-alert">
-     <p>weather alert placeholder text</p>
+  
+    <header>
+        <img class="logo" alt="logo" src="./images/chamberOfCommerceIcon.png">
+        <h1 class="company-name"> the CHAMBER OF COMMERCE of<br>
+            Mesa, Arizona </h1> 
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/final-project/index.html">Home</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/mesa.html">Mesa</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/join.html">Join</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/directory.html">Directory</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery">
+        <div class="container">
+          <div id="carousel">
+            <figure><img src="./images/downtown-mesa.jpg" alt="Downtown Mesa"></figure>
+            <figure><img src="./images/flat-iron.jpg" alt="Flat Iron Mountain"></figure>
+            <figure><img src="./images/mesa-temple.jpg" alt="Mesa Arizona Temple"></figure>
+            <figure><img src="./images/monument-valley.jpg" alt="Nearby Monument Valley"></figure>
+            <figure><img src="./images/red-mountain.jpg" alt="Red Mountain"></figure>
+            <figure><img src="./images/saguaro-lake.jpg" alt="Saguaro Lake"></figure>
+            <figure><img src="./images/arizona-state-university.jpg" alt="Arizona State University"></figure>
+            <figure><img src="./images/winter-golfing.jpg" alt="Winter Golfing"></figure>
+            <figure><img src="./images/salt-river-horses.jpg" alt="Wild Horses at the Salt River"></figure>
+          </div>
+        </div>
+      </section>
+
+      <main>
+
+    <section class="current-weather">
+        <img id="weather-icon" src="https://via.placeholder.com/50" alt="weather icon">
+        <div class="weather-info">
+            <p>Currently: <span id="condition">Clear</span><p>
+            <p>Temperature: <span id="temperature"> 54</span>&#8457;</p>
+            <p>Humidity: <span id="humidity">95</span>%</p>
+        </div>
     </section>
-    <img alt="logo" source="https://via.placeholder.com/150">
-    <h1> the CHAMBER OF COMMERCE of Mesa, Arizona </h1> 
-  </header>
+
+    <section class="weather-forecast">
+        <p>Forecasted High Temperatures: </p>
+        <p id="date1"> <span id="date1day">Fri</span>, <span id="date1month">Dec.</span> <span id="date1date">10</span> : <span id="date1temp">61</span>&#8457;</p>
+        <p id="date2"> <span id="date2day">Sat</span>, <span id="date2month">Dec.</span> <span id="date2date">11</span> : <span id="date2temp">65</span>&#8457;</p>
+        <p id="date3"> <span id="date3day">Sun</span>, <span id="date3month">Dec.</span> <span id="date3date">12</span> : <span id="date3temp">68</span>&#8457;</p>
+    </section>
   
-  <nav>
-    <ul class="navigation">
-        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/final-project/index.html">Home</a></li>
-        <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/mesa.html">Mesa</a></li>
-        <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/join.html">Join</a></li>
-        <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/directory.html">Directory</a></li>
-        <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/contact.html">Contact</a></li>
-      </ul>
-  </nav>
-  
-  <div class="gallery">
+  <div class="join">
+    <h2><a href="file:///C:/Users/parke/wdd230/final-project/join.html">Join the Chamber of Commerce today!</a></h2>
+    <p>The Mesa Chamber of Commerce is an invaluable resource in making your business successful. By giving you access to resources, successful business and civic leaders as well as advocating for your business interests, the Chamber understands that your success is our success.</p>
+    <p>See our services and membership plans <a href="file:///C:/Users/parke/wdd230/final-project/join.html">here.</a></p> 
   </div>
-  
-  <main>
-    <h2>Join the Chamber of Commerce today!</h2>
-  </main>
   
   <div class="upcoming-events">
     <h2>Upcoming Events</h2>
@@ -65,36 +97,32 @@
       Home of fantastic pizza and the largest Wurlitzer theater organ in the world, with over 7,000 pipes, Organ Stop Pizza has been an icon of Mesa since 1972!
     </p>
   </div>
-  
-  
-  <div class="weather">
-    <section class="current-weather">
-    </section>
-    <section class="weather-forecast">
-    </section> 
-  </div>
+
+    </main>
   
   <footer>
     <section class="contact-info">
-      <p class="address">
+    <p class="address">
         <strong>Mesa Chamber of Commerce</strong><br>
         165 N. Centennial Way<br>
         Suite 208<br>
         Mesa, AZ 85201<br>
-      </p>
-      <p class="phone">
+    </p>
+    <p class="phone">
         (480) 969-1307
-      </p>
-      <p class="email">
+    </p>
+    <p class="email">
         info@mesachamber.org
-      </p>
-    </section>
+    </p>
     <section class="social-media">
-      <img alt="facebook-icon" source="./images/facebookIcon.png">
-      <img alt="twitter-icon" source="./images/twitterIcon.png">
-      <img alt="linkedIn-icon" source="./images/linkedInIcon.png">
+        <a href="https://www.facebook.com/MesaChamberofCommerce/"><img class="icon" alt="facebook-icon" src="./images/facebookIcon.png"></a>
+        <a href="https://twitter.com/mesachamber"><img class="icon" alt="twitter-icon" src="./images/twitterIcon.png"></a>
+        <a href="https://www.linkedin.com/company/the-mesa-chamber-of-commerce/"><img class="icon" alt="linkedIn-icon" src="./images/linkedInIcon.png"></a>
     </section>
+    </section>
+
     <p>Last Modified: <span id="date-last-modified"></span></p>
   </footer>
-  <script src="./js/last-modified.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/weather.js"></script>
 </body>  
