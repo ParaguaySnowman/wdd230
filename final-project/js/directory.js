@@ -22,8 +22,8 @@ fetch(requestURL)
         picture.setAttribute('alt', businesses[i].businessName + " logo");
 
         h2.textContent = businesses[i].businessName;
-        p1.textContent = 'Phone: ' + businesses[i].contactInfo.phone;
-        p2.textContent = 'Address: ' + businesses[i].contactInfo.address;
+        p1.textContent = 'Phone: ' + businesses[i].contactInfo[0];
+        p2.textContent = 'Address: ' + businesses[i].contactInfo[1];
         p3.textContent = 'Website: ' + businesses[i].website;
         
         card.appendChild(picture);
