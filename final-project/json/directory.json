@@ -1,8 +1,8 @@
 {   
     "mesa-businesses": [
         {
-            "business-name":"Pete's Fish and Chips",
-            "contact-info":[
+            "businessName":"Pete's Fish and Chips",
+            "contactInfo":[
                 {
                     "phone":"480-964-7242",
                     "address":"22 South Mesa Dr."
@@ -12,8 +12,8 @@
             "website":"https://petesfishandchips.com/"
         },
         {
-            "business-name":"Banner Health",
-            "contact-info":[
+            "businessName":"Banner Health",
+            "contactInfo":[
                 {
                     "phone":"833-252-5535",
                     "address":"1900 N Higley Rd."
@@ -23,8 +23,8 @@
             "website":"https://bannerhealth.com/"
         },
         {
-            "business-name":"Boeing",
-            "contact-info":[
+            "businessName":"Boeing",
+            "contactInfo":[
                 {
                     "phone":"480-891-3000",
                     "address":"5000 E McDowell Rd."
@@ -34,8 +34,8 @@
             "website":"https://boeing.com/"
         },
         {
-            "business-name":"Buckhorn Baths Motel",
-            "contact-info":[
+            "businessName":"Buckhorn Baths Motel",
+            "contactInfo":[
                 {
                     "phone":"n/a",
                     "address":"166 N Recker Rd."
@@ -45,8 +45,8 @@
             "website":"https://buckhornbathsmotel.com"
         },
         {
-            "business-name":"DriveTime",
-            "contact-info":[
+            "businessName":"DriveTime",
+            "contactInfo":[
                 {
                     "phone":"480-833-0600",
                     "address":"333 S Alma School Rd."
@@ -56,8 +56,8 @@
             "website":"https://petesfishandchips.com/"
         },
         {
-            "business-name":"Organ Stop Pizza",
-            "contact-info":[
+            "businessName":"Organ Stop Pizza",
+            "contactInfo":[
                 {
                     "phone":"480-813-5700",
                     "address":"1149 E Southern Ave."
@@ -67,8 +67,8 @@
             "website":"https://organstoppizza.com/"
         },
         {
-            "business-name":"Sloan Park",
-            "contact-info":[
+            "businessName":"Sloan Park",
+            "contactInfo":[
                 {
                     "phone":"480-668-0500",
                     "address":"2330 W Rio Salado Pkwy."
@@ -78,8 +78,8 @@
             "website":"https://www.mlb.com/cubs/sloan-park"
         },
         {
-            "business-name":"Mesa Country Club",
-            "contact-info":[
+            "businessName":"Mesa Country Club",
+            "contactInfo":[
                 {
                     "phone":"480-964-1797",
                     "address":"660 W Fairway Dr"
