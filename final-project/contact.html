@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Parker Mortensen" />
+<meta
+    name="description"
+    content="Final Project for WDD230 2021 for Parker Mortensen"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/normalize.css" />
+<link rel="stylesheet" href="./css/common.css" type="text/css" />
+<title>Chamber of Commerce - Mesa, Arizona - Home</title>
+</head>
+
+<body>
+  
+    <header>
+        <img class="logo" alt="logo" src="./images/chamberOfCommerceIcon.png">
+        <h1 class="company-name"> the CHAMBER OF COMMERCE of<br>
+            Mesa, Arizona </h1> 
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/index.html">Home</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/mesa.html">Mesa</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/join.html">Join</a></li>
+            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/directory.html">Directory</a></li>
+            <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/final-project/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+      <main>
+          <section class="body-contactInfo">
+              <h1>Contact Us!</h1>
+              <p class="body-address">
+                  Address:<br>
+                  <strong>Mesa Chamber of Commerce</strong><br>
+                    165 N. Centennial Way<br>
+                    Suite 208<br>
+                    Mesa, AZ 85201<br>
+                </p>
+                <p class="body-phone">
+                    <p class="phone">
+                        (480) 969-1307
+                </p>
+                <p class="body-email">
+                    info@mesachamber.org
+                </p>
+          </section>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213187.57241015416!2d-111.87784110459106!3d33.3957079075451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba7c2c0c592c1%3A0xd10fc215694e771b!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1639444162117!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <form class="contactForm">
+            <label for="first-name"
+              >First Name:<br>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                pattern="[A-Za-z]{5,}"
+                required
+              /> </label
+            ><br />
+            <label for="last-name"
+              >Last Name:<br>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                pattern="[A-Za-z]{5,}"
+                required
+              /> </label
+            ><br />
+            <label for="title"
+              >title:<br>
+              <input type="text" list="titles" name="title" />
+              <datalist id="titles">
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Rev.">Rev.</option></datalist
+              > </label><br>
+              <label for="email"
+                >email:<br>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="username@server.com"
+                />
+              </label>
+              <br />
+              <label for="phone-number"
+                >mobile phone:<br>
+                <input type="tel" id="phone-number" name="phoneNumber" required />
+              </label><br>
+              <label for="comment"
+              >
+              comment:<br>
+              <input type="text" id="comment" name="comment" required>
+            </label>
+          </form>
+          <h2>Board Members</h2>
+          <ul class="boardMembers1"><h3>Executive Board Members</h3>
+              <li><strong>Glenn Kasprzyk - Chairman</strong></li>
+              <li>Kevin Broekling</li>
+              <li>James Christensen</li>
+              <li>Joe Cotroneo</li>
+              <li>Erica Emmons</li>
+              <li>Dr. Andi Fourlis</li>
+              <li>Mark Freeman - Vice Mayor</li>
+              <li><strong>Craig Lohman - Treasurer</strong></li>
+        </ul>
+        <ul class="boardMembers2"><h3>Board of Directors</h3>
+              <li>Jane Hanson</li>
+              <li>Shannon Heinze</li>
+              <li>Gina Horne</li>
+              <li>William Jabjiniak</li>
+              <li>Michael Jackson</li>
+              <li>Hesston Klenk</li>
+              <li>Brian Koch</li>
+              <li>Jared Langkilde</li>
+              <li>Marc Garcia</li>
+              <li>Jennifer Graves</li>
+              <li>Sang Luu</li>
+              <li>Jeff Mirasola</li>
+              <li>Jan Newton</li>
+              <li>Warde Nichols</li>
+              <li>Brian O'Neil</li>
+              <li>Andrew Pillado</li>
+              <li>Otto Shill</li>
+              <li>Eric Tune</li>
+              <li>Bryan Vivian</li>
+              <li>Vany Wong</li>
+              <li>Lamont Yoder</li>
+              <li>Mark Young</li>  
+          </ul>
+        </main>
+
+<footer>
+    <section class="contact-info">
+    <p class="address">
+        <strong>Mesa Chamber of Commerce</strong><br>
+        165 N. Centennial Way<br>
+        Suite 208<br>
+        Mesa, AZ 85201<br>
+    </p>
+    <p class="phone">
+        (480) 969-1307
+    </p>
+    <p class="email">
+        info@mesachamber.org
+    </p>
+    <section class="social-media">
+        <a href="https://www.facebook.com/MesaChamberofCommerce/"><img class="icon" alt="facebook-icon" src="./images/facebookIcon.png"></a>
+        <a href="https://twitter.com/mesachamber"><img class="icon" alt="twitter-icon" src="./images/twitterIcon.png"></a>
+        <a href="https://www.linkedin.com/company/the-mesa-chamber-of-commerce/"><img class="icon" alt="linkedIn-icon" src="./images/linkedInIcon.png"></a>
+    </section>
+    </section>
+
+    <p>Last Modified: <span id="date-last-modified"></span></p>
+  </footer>
+  <script src="./js/common.js"></script>
+</body> 
