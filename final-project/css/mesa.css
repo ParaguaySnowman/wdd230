@@ -1,0 +1,37 @@
+.gallery {
+    display: grid;
+    grid-template-rows: repeat(9, 116px);
+    row-gap: 5px;
+    align-items: center;
+    margin: auto;
+}
+
+ /*begin-TABLET/LAPTOP View******************************************/
+  @media only screen and (max-width: 1024px) and (min-width: 426px) {
+	  
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(3, 116px);
+        grid-template-columns: repeat(4, 186px);
+        column-gap:5px;
+    }
+}
+
+/*begin-DESKTOP View*************************************************/
+@media only screen and (min-width: 1025px) {
+
+  .weather {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+      grid-template-rows: repeat(2, 116px);
+      grid-template-columns: repeat(6, 186px);
+      column-gap:5px;
+  }
+}

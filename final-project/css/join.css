@@ -1,0 +1,10 @@
+/*begin-TABLET/LAPTOP and DESKTOP View***************************/
+@media only screen and (min-width: 426px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+	    margin: auto;
+    }
+}

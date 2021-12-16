@@ -1,18 +1,24 @@
-/********************header***********************/
+/*begin-BASE/SMALL MOBILE VIEW: MAX WITDTH: 425px.***************/
+
+/*begin-body/main********************************/
+body, main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+/*end-body/main**********************************/
+
+/*begin-header***********************************/
 header {
-    display: grid;
-    grid-template-columns: 125px 1fr;
+  margin: auto;
 }
-
-.logo {
-  grid-column: 1;
+header img{
+  max-width:100%;
 }
+/*end-header*************************************/
 
-.company-name {
-  grid-column: 2;
-}
-
-/*******************navigation*********************/
+/*begin-navigation*******************************/
 nav {
   background-color: #BD2035;
   margin-bottom: 0;
@@ -53,36 +59,29 @@ nav {
     display: block;
   }
 
-/*************************************Main*******************************************/
+/*begin-main*************************************/
 main {
   background-color: #E47D1E;
 }
+/*end-main***************************************/
 
-/********************footer***********************/
-.contact-info {
-    display: flex;
-    background-color: #0070B9;
-    color: #fff;
+/*begin-footer***********************************/
+footer {
+  background-color: #0070B9;
 }
-
-.contact-info p {
-    margin: 10px;
+footer p {
+  font-size: 10px;
 }
+/*end-footer*************************************/
 
-.social-media {
-    margin: 10px;
-}
-
-.icon {
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-}
+/*end-BASE/SMALL MOBILE VIEW: MAX WITDTH: 425px.*****************/
 
 
-  /**************************tablet/laptop/desktop view**********************************/
+
+/*begin-TABLET/LAPTOP and DESKTOP View***************************/
   @media only screen and (min-width: 426px) {
-    /*Navigation*/
+
+/*begin-navigation*******************************/
     .navigation {
       display: flex;
       padding: 0;
@@ -99,4 +98,29 @@ main {
     nav ul li {
       flex: 1 1 100%;
     }
+
+    /*begin-footer***********************************/
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .addressBox {
+      grid-column: 1;
+    }
+    .other {
+      grid-column: 2;
+    }
+    footer p{
+      font-size: 16px;
+    }
+    /*end-footer*************************************/
   }
+
+/*begin-header***********************************/
+/*end-header*************************************/
+/*begin-navigation*******************************/
+/*end-navigation*********************************/
+/*begin-main*************************************/
+/*end-main***************************************/
+/*begin-footer***********************************/
+/*end-footer*************************************/
