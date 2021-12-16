@@ -1,7 +1,8 @@
 /*begin-BASE/SMALL MOBILE VIEW: MAX WITDTH: 425px.***************/
 
 /*begin-body/main********************************/
-body, main {
+body,
+main {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -13,8 +14,8 @@ body, main {
 header {
   margin: auto;
 }
-header img{
-  max-width:100%;
+header img {
+  max-width: 100%;
 }
 /*end-header*************************************/
 
@@ -24,40 +25,40 @@ nav {
   margin-bottom: 0;
 }
 
-  nav li a {
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: 0.25rem;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    background-color: rgb(60, 16, 16);
-    color: #fff;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navigation .active {
-    background-color: rgb(60, 16, 16);
-    color: #fff;
-  }
-  
-  .navigation li:first-child {
-    display: block;
-  }
-  
-  .navigation li {
-    display: none;
-  }
-  
-  .responsive li {
-    display: block;
-  }
+nav li a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 0.25rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(60, 16, 16);
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation .active {
+  background-color: rgb(60, 16, 16);
+  color: #fff;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
 
 /*begin-main*************************************/
 main {
@@ -76,51 +77,40 @@ footer p {
 
 /*end-BASE/SMALL MOBILE VIEW: MAX WITDTH: 425px.*****************/
 
-
-
 /*begin-TABLET/LAPTOP and DESKTOP View***************************/
-  @media only screen and (min-width: 426px) {
-
-/*begin-navigation*******************************/
-    .navigation {
-      display: flex;
-      padding: 0;
-    }
-  
-    .navigation li:first-child {
-      display: none;
-    }
-  
-    .navigation li {
-      display: block;
-    }
-  
-    nav ul li {
-      flex: 1 1 100%;
-    }
-
-    /*begin-footer***********************************/
-    footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .addressBox {
-      grid-column: 1;
-    }
-    .other {
-      grid-column: 2;
-    }
-    footer p{
-      font-size: 16px;
-    }
-    /*end-footer*************************************/
+@media only screen and (min-width: 426px) {
+  /*begin-navigation*******************************/
+  .navigation {
+    display: flex;
+    padding: 0;
   }
 
-/*begin-header***********************************/
-/*end-header*************************************/
-/*begin-navigation*******************************/
-/*end-navigation*********************************/
-/*begin-main*************************************/
-/*end-main***************************************/
-/*begin-footer***********************************/
-/*end-footer*************************************/
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  /*begin-footer***********************************/
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .addressBox {
+    grid-column: 1;
+  }
+  .other {
+    grid-column: 2;
+  }
+  footer p {
+    font-size: 16px;
+  }
+  /*end-footer*************************************/
+}
+

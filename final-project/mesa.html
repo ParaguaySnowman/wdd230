@@ -1,102 +1,157 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Parker Mortensen" />
+    <meta
+      name="description"
+      content="Final Project for WDD230 2021 for Parker Mortensen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <link rel="stylesheet" href="./css/homepage.css" type="text/css" />
+    <title>Chamber of Commerce - Mesa, Arizona - City of Mesa</title>
+  </head>
 
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="author" content="Parker Mortensen" />
-<meta
-    name="description"
-    content="Final Project for WDD230 2021 for Parker Mortensen"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/normalize.css" />
-<link rel="stylesheet" href="./css/common.css" type="text/css" />
-<link rel="stylesheet" href="./css/homepage.css" type="text/css" />
-<title>Chamber of Commerce - Mesa, Arizona - City of Mesa</title>
-</head>
-
-<body>
-  
+  <body>
     <header>
-        <img class="logo" alt="logo" src="./images/chamber-of-commerce-logo.jpg">
+      <img
+        class="logo"
+        alt="logo"
+        src="./images/chamber-of-commerce-logo.jpg"
+      />
     </header>
 
     <nav>
-        <ul class="navigation">
-            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/index.html">Home</a></li>
-            <li class="active"><a href="https://paraguaysnowman.github.io/wdd230/final-project/mesa.html">Mesa</a></li>
-            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/join.html">Join</a></li>
-            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/directory.html">Directory</a></li>
-            <li><a href="https://paraguaysnowman.github.io/wdd230/final-project/contact.html">Contact</a></li>
-        </ul>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li>
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/final-project/index.html"
+            >Home</a
+          >
+        </li>
+        <li class="active">
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/final-project/mesa.html"
+            >Mesa</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/final-project/join.html"
+            >Join</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/final-project/directory.html"
+            >Directory</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://paraguaysnowman.github.io/wdd230/final-project/contact.html"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </nav>
 
-      <main>
+    <main>
+      <section class="cityInfo">
+        <h1>Mesa, Arizona</h1>
+        <p>
+          <strong>Population:</strong> with just over<strong> 500,000</strong>
+          residents, Mesa is the largest suburban city by population in the
+          United States, larger than some better known cities, such as
+          Minneapolis or Miami. It is the thrid largest city in Arizona,
+          following Phoenix and Tucson.
+        </p>
+        <p>
+          <strong>History:</strong> The Hohokam People built the largest and
+          most sophisticated system of canals in this area starting around 2,000
+          years ago before their dissapperance. The area was later inhabited by
+          other people, such as the Apache. The area was settled by Mormon
+          pioneers in three groups between 1877 and 1879. The opening of air
+          fields at Falcon Field and William Field brought many military
+          personnel to the area, followed by aviation companies such as Boeing.
+          With the advent of air condiationing Mesa gradually transformed from
+          an agricultual community into a suburb of Phoenix.
+        </p>
+      </section>
 
-        <section class="cityInfo">
-        <h1> Mesa, Arizona</h1>
-        <p>
-            <strong>Population:</strong> with just over<strong> 500,000</strong> residents, Mesa is the largest suburban city by
-            population in the United States, larger than some better known cities, such as Minneapolis or Miami. It is the thrid
-            largest city in Arizona, following Phoenix and Tucson.
+      <div class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <p>Crossroads of The West Gun Shows - Jan 1</p>
+        <p>Art & Craft Festival - Jan 8</p>
+        <p>Southwest Gospel Music Festival - Jan 13</p>
+      </div>
+
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <img src="./images/downtown-mesa.jpg" alt="Downtown Mesa" />
+        <img src="./images/flat-iron.jpg" alt="Flat Iron Mountain" />
+        <img src="./images/mesa-temple.jpg" alt="Mesa Arizona Temple" />
+        <img src="./images/monument-valley.jpg" alt="Nearby Monument Valley" />
+        <img src="./images/red-mountain.jpg" alt="Red Mountain" />
+        <img src="./images/saguaro-lake.jpg" alt="Saguaro Lake" />
+        <img
+          src="./images/arizona-state-university.jpg"
+          alt="Arizona State University"
+        />
+        <img src="./images/winter-golfing.jpg" alt="Winter Golfing" />
+        <img
+          src="./images/salt-river-horses.jpg"
+          alt="Wild Horses at the Salt River"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <section class="contact-info">
+        <p class="address">
+          <strong>Mesa Chamber of Commerce</strong><br />
+          165 N. Centennial Way<br />
+          Suite 208<br />
+          Mesa, AZ 85201<br />
         </p>
-        <p>
-            <strong>History:</strong> The Hohokam People built the largest and most sophisticated system of canals in this area 
-            starting around 2,000 years ago before their dissapperance. The area was later inhabited by other
-            people, such as the Apache. The area was settled by Mormon pioneers in three groups between 1877 and 1879.
-            The opening of air fields at Falcon Field and William Field brought many military personnel to the area, 
-            followed by aviation companies such as Boeing. With the advent of air condiationing Mesa gradually
-            transformed from an agricultual community into a suburb of Phoenix.
+        <p class="phone">
+          (480) 969-1307
         </p>
+        <p class="email">
+          info@mesachamber.org
+        </p>
+        <section class="social-media">
+          <a href="https://www.facebook.com/MesaChamberofCommerce/"
+            ><img
+              class="icon"
+              alt="facebook-icon"
+              src="./images/facebook-icon.png"
+          /></a>
+          <a href="https://twitter.com/mesachamber"
+            ><img
+              class="icon"
+              alt="twitter-icon"
+              src="./images/twitter-icon.png"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/the-mesa-chamber-of-commerce/"
+            ><img
+              class="icon"
+              alt="linkedIn icon"
+              src="./images/linked-in-icon.png"
+          /></a>
         </section>
+      </section>
 
-        <div class="upcoming-events">
-            <h2>Upcoming Events</h2>
-            <p>Crossroads of The West Gun Shows - Jan 1</p>
-            <p>Art & Craft Festival - Jan 8</p>
-            <p>Southwest Gospel Music Festival - Jan 13</p>
-          </div>
-
-        <h3>Gallery</h3>
-        <div class="gallery">
-          <img src="./images/downtown-mesa.jpg" alt="Downtown Mesa">
-          <img src="./images/flat-iron.jpg" alt="Flat Iron Mountain">
-          <img src="./images/mesa-temple.jpg" alt="Mesa Arizona Temple">
-          <img src="./images/monument-valley.jpg" alt="Nearby Monument Valley">
-          <img src="./images/red-mountain.jpg" alt="Red Mountain">
-          <img src="./images/saguaro-lake.jpg" alt="Saguaro Lake">
-          <img src="./images/arizona-state-university.jpg" alt="Arizona State University">
-          <img src="./images/winter-golfing.jpg" alt="Winter Golfing">
-          <img src="./images/salt-river-horses.jpg" alt="Wild Horses at the Salt River">
-       </div>
-
-
-      </main>
-      
-
-<footer>
-    <section class="contact-info">
-    <p class="address">
-        <strong>Mesa Chamber of Commerce</strong><br>
-        165 N. Centennial Way<br>
-        Suite 208<br>
-        Mesa, AZ 85201<br>
-    </p>
-    <p class="phone">
-        (480) 969-1307
-    </p>
-    <p class="email">
-        info@mesachamber.org
-    </p>
-    <section class="social-media">
-        <a href="https://www.facebook.com/MesaChamberofCommerce/"><img class="icon" alt="facebook-icon" src="./images/facebook-icon.png"></a>
-        <a href="https://twitter.com/mesachamber"><img class="icon" alt="twitter-icon" src="./images/twitter-icon.png"></a>
-        <a href="https://www.linkedin.com/company/the-mesa-chamber-of-commerce/"><img class="icon" alt="linkedIn icon" src="./images/linked-in-icon.png"></a>    </section>
-    </section>
-
-    <p>Last Modified: <span id="date-last-modified"></span></p>
-  </footer>
-  <script src="./js/common.js"></script>
-</body> 
+      <p>Last Modified: <span id="date-last-modified"></span></p>
+    </footer>
+    <script src="./js/common.js"></script>
+  </body>
+</html>
