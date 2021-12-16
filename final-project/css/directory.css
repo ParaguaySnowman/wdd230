@@ -4,7 +4,8 @@
   }
   
   .cards section {
-    background-color: rgba(72, 72, 153, 0.453);
+    background-color: #b96f00;
+    border-radius: 30px;
     display: flex;
     flex-flow: column;
     margin: 15px;
@@ -15,13 +16,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
     padding-bottom: 10px;
     width: 50%;
     height: 60%;
   }
   
   h2 {
-    color: blue;
+    color: rgb(7, 54, 172);
   }
   
   .cards h2, .cards section p {
