@@ -1,4 +1,3 @@
-/*
 const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.4152&lon=-111.8315&units=imperial&appid=7501d1d8281e61c575f55a43c59f7e2d"
 
 
