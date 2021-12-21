@@ -1,0 +1,28 @@
+table {
+    font-family:"Ubuntu";
+}
+
+thead .mainhead, tfoot {
+    background-color: #7FB9C2;
+}
+
+thead .subhead, tbody tr:nth-child(4) td:nth-child(3){
+    background-color: #628CA6;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #E7F0ED;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E7FFED;
+}
+
+td {
+	text-align: center;
+}
+
+tfoot {
+    font-size: 9px;
+}
