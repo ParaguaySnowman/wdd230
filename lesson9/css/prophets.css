@@ -1,14 +1,15 @@
 .cards {
     display: flex;
     flex-flow: wrap;
+    margin:auto;
   }
   
   .cards section {
     background-color: rgba(72, 72, 153, 0.453);
     display: flex;
     flex-flow: column;
-    margin: 15px;
     width: 95%;
+    margin: 5px;
   }
   
   section img {
@@ -26,6 +27,7 @@
   
   section h2, section p {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
   }
   
   /*tablet/laptop view*/
