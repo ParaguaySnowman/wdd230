@@ -86,9 +86,12 @@
           <option value="Thunderstorm">Thunderstorm</option>
           <option value="Tornado">Tornado</option>
        </datalist></label><br>
+
         <label for="stormSeverity">storm severity:
-          <input type="range" min="1" max="10" id="stormSeverity" name="stormSeverity">
+          <input type="range" value="0" min="1" max="10" id="stormSeverity" name="stormSeverity" oninput="this.nextElementSibling.value = this.value">
+          <output>0</output>
         </label><br>
+
         <label for="stormRegion">Storm Region<input type="text" list="cities" name="stormRegion"><datalist id="cities">
           <option value="" disabled selected></option>Select a Region ...</option>
           <option value="Fish Haven">Fish Haven</option>
