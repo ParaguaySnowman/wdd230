@@ -9,8 +9,69 @@ nav ul li {
     padding: 20px;
 }
 
-@media (max-width: 230px) {
-    nav ul li {
-        flex: 100%
-    }
+.primary {
+    background-color: #137EF4;
+    color: #fff
 }
+
+.secondary {
+    background-color: #69C3EA;
+    color: #fff;
+}
+
+.text {
+    background-color: #137EF4;
+    color: #FFFFFF;
+}
+
+.primaryMenu {
+    background-color: #000000;
+    color: #fff;
+}
+
+.secondaryMenu {
+    background-color: #3D3D3D;
+    color: #fff;
+}
+
+.fonts {
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+
+#h1 {
+    font-size: 22px;
+}
+
+#h2 {
+    font-size: 20px;
+}
+
+#h3 {
+    font-size: 18px;
+}
+
+td {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+  }
+  
+  li a {
+    display: block;
+  }
+
+  @media only screen and (min-width: 426px) {
+      ul {
+        width: auto;
+      }
+
+      li a{
+          display:inline;
+      }
+  }
